@@ -6,4 +6,7 @@ $(document).ready(function(){
     });
 
     // Close Panel
+    $(".closePanel").click(function(){
+      $(".slidePanel").fadeOut(300);
+    })
 });

@@ -505,4 +505,16 @@ footer{
 
     }
   }
+
+  .closePanel{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    color: $white;
+    font-size: 1.3em;
+
+    &:hover{
+      cursor: pointer;
+    }
+  }
 }
