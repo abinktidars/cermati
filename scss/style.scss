@@ -406,6 +406,7 @@ $smokeGrey: #e5e5e5;
 	}
 
 	&__item{
+    position: relative;
     border: 1px solid #cccccc;
     padding: 20px 18px;
     color: $black;
@@ -431,6 +432,12 @@ $smokeGrey: #e5e5e5;
     &--desc{
       font-size: 1em;
       line-height: 1.6;
+    }
+
+    &--icon{
+      position: absolute;
+      top: 25px;
+      right: 20px;
     }
 	}
 }
