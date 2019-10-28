@@ -6,6 +6,11 @@ $(document).ready(function(){
     });
 
     // Close Panel
+
+    setTimeout(function(){       
+      $(".slidePanel").fadeIn(300);
+    }, 5000);
+
     $(".closePanel").click(function(){
       $(".slidePanel").fadeOut(300);
     })

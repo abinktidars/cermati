@@ -268,14 +268,14 @@ $smokeGrey: #e5e5e5;
   padding: 17px;
   overflow: auto;
   height: 70px;
-  position: relative;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 2;
 
   @include max-responsive($sm){
-    position: absolute;
-    top: 0;
-    z-index: 2;
     height: auto;
-    padding: 6px;
+    padding: 10px 5px 20px;
   }
   
   .container{
@@ -293,7 +293,7 @@ $smokeGrey: #e5e5e5;
     width: 85%;
 
     @include max-responsive($sm){
-      width: 70%;
+      width: 100%;
     }
   }
   
@@ -302,10 +302,11 @@ $smokeGrey: #e5e5e5;
     width: 15%;
     text-align: right;
     margin-top: 9px;
-
+    
     @include max-responsive($sm){
-      width: 30%;
-      margin-top: 30px;
+      width: 100%;
+      text-align: left;
+      margin-top: 20px;
     }
     
     .btn{
@@ -457,6 +458,8 @@ footer{
   left: 0;
   width: 600px;
   z-index: 2;
+  display: none;
+  
   @include max-responsive($sm){
     width: 100%;
   }
